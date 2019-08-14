@@ -1,7 +1,6 @@
 'use strict';
 
 var userName = prompt('Hi. May I know Your Name, Please?'){
-console.log('The user name is,' + userName + );
 alert('Hello,' +userName);
 }
 
