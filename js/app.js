@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 var userHuman = prompt('Hi. Are You not a Robot?');
 // userHuman = userHuman.toLowerCase();
 
