@@ -1,12 +1,18 @@
-h1 {
+h1 h2 {
   color: rgb(179, 18, 18);
   font: bold;
+  font-size: large;
 }
 
 body {
   background-color: aqua;
 }
 
+p {
+  font-size: medium;
+  }
+
 footer {
-  background-color: blueviolet;
+  background-color: black;
+  height: 20px;
 }

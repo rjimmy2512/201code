@@ -1,17 +1,10 @@
 'use strict';
 
 var userType = prompt('Hi. Are You not a Robot?');
-<<<<<<< HEAD
-if(userType.toLowerCase() === 'NO'){
-  alert('Welcome to My Website.');
-} else {
-  alert('Noooo! You were not meant to be Here!!');
-=======
 if(userType.toLowerCase() === 'no'){
   alert('Welcome to My Website.');
 } else {
-  alert('Nooo! You are not meant to be Here!!');
->>>>>>> 631d334dc9b09940147241b9372f8f2f34e0a07c
+  alert('Noooo! You were not meant to be Here!!');
 }
 
 var userGender = prompt('Are You a Male?');
