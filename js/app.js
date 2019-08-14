@@ -1,9 +1,9 @@
 'use strict';
 
-var userHuman = prompt('Hi. Are You not a Robot?');
-// userHuman = userHuman.toLowerCase();
+var userType = prompt('Hi. Are You not a Robot?');
+// userType = userType.toLowerCase();
 
-if(userHuman === 'no'){
+if(userType === 'no'){
   alert('Welcome to My Website.');
 } else {
   alert('Noon! You were not meant to be Here!!');
