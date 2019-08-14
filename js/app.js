@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 var userHuman = prompt('Hi. Are You not a Robot?');
 // userHuman = userHuman.toLowerCase();
 
@@ -66,7 +64,6 @@ if(userChoice.toUpperCase() === 'YES'){
 //   do something else
 
 var userChosesToGoAhead = prompt('This Website talks about Coding. Do you like to go ahead?');
-
 if(userChosesToGoAhead.toUpperCase() === 'YES'){
   alert('Welcome to My Website, ' + userName +'.');
 } else {
