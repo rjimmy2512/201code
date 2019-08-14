@@ -1,6 +1,7 @@
 'use strict';
 
-var userName = prompt('Hi. May I know Your Name, Please?'){
+var userName = prompt('Hi. May I know Your Name, Please?')
+if(userName.toLowerCase() === ''){
 alert('Hello,' +userName);
 }
 
