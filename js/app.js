@@ -1,77 +1,43 @@
 'use strict';
 
 var userType = prompt('Hi. Are You not a Robot?');
+<<<<<<< HEAD
 if(userType.toLowerCase() === 'NO'){
   alert('Welcome to My Website.');
 } else {
   alert('Noooo! You were not meant to be Here!!');
-}
-
-// if(condition is met){
-//   do something
-// } else if(a differnt condition is met){
-//   do something else
-// } else {
-//   do something else
-
-var userName = prompt('So, What is your name?');
-    alert('user name is,' + userName);
-    log.console('Thank you, '+ userName +);
-
- 
-var userGender = prompt('Are You a Male,' + username +'?');
-if(userGender.toLowerCase() === 'YES'){
-  alert('I am a Male too, ' + userName +'. Please click and go ahead.');
+=======
+if(userType.toLowerCase() === 'no'){
+  alert('Welcome to My Website.');
 } else {
-  alert('Nice to have you here, ' + userName + '. Click and Go ahead.');
+  alert('Nooo! You are not meant to be Here!!');
+>>>>>>> 631d334dc9b09940147241b9372f8f2f34e0a07c
 }
 
-// if(condition is met){
-//   do something
-// } else if(a differnt condition is met){
-//   do something else
-// } else {
-//   do something else
-
-var userCountry = prompt('Do you live in USA?');
-if(userCountry.toUpperCase() === 'YES'){
-  alert('I live in USA, Too');
+var userGender = prompt('Are You a Male?');
+if(userGender.toLowerCase() === 'yes'){
+  alert('I am a Male, Too.');
 } else {
-  alert('Which country do you live in?');
+  alert('That\'s cool. I am a Male!!');
 }
 
-// if(condition is met){
-//   do something
-// } else if(a differnt condition is met){
-//   do something else
-// } else {
-//   do something else
-
-var userChoice = prompt('Do you like Coding?');
-if(userChoice.toUpperCase() === 'YES'){
-  alert('I like Coding, Too');
+var userCountry = prompt('Which Country do you live in?');
+if(userCountry.toLowerCase() === 'usa'){
+  alert('Waaw! I live in USA too!!!');
 } else {
-  alert('Not bad. I can teach you some tricks about it!');
+  alert('Waaw. Your country is great. I will visit one day!');
 }
 
-// if(condition is met){
-//   do something
-// } else if(a differnt condition is met){
-//   do something else
-// } else {
-//   do something else
-
-var userChosesToGoAhead = prompt('This Website talks about Coding. Do you like to go ahead?');
-
-if(userChosesToGoAhead.toUpperCase() === 'YES'){
-  alert('Welcome to My Website, ' + userName +'.');
+var userLikesCoding = prompt('Do you like Coding?');
+if(userLikesCoding.toLowerCase() === 'yes'){
+  alert('Waaw! It is My Hoobby!!!');
 } else {
-  alert('It is okey. See you if you change your mind!!!');
+  alert('Try it! It is very interesting!!');
 }
 
-// if(condition is met){
-//   do something
-// } else if(a differnt condition is met){
-//   do something else
-// } else {
-//   do something else
+var userWannaGoAhead = prompt('This site is about Coding. Do you want to go ahead and learn more?');
+if(userWannaGoAhead.toLowerCase() === 'yes'){
+  alert('Alright. Go ahead and Click Ok.');
+} else {
+  alert('It is okey. Maybe we will meet again when you change your mind.');
+}
