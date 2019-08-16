@@ -13,7 +13,7 @@ if(userType.toLowerCase() === 'no'){
   alert('Noooo! You were not meant to be Here, ' + userName +'!!');
 }
 
-var userGender = prompt('Are You a Male , ' + userName +'?');
+var userGender = prompt('Are You a Male, ' + userName +'?');
 console.log('The user gender is, ' + userGender);
 if(userGender.toLowerCase() === 'yes'){
   alert('I am a Male, Too.');

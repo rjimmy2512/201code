@@ -10,9 +10,11 @@ body {
 
 p {
   font-size: medium;
-  }
+}
 
 footer {
+  display: block;
   background-color: black;
   height: 20px;
 }
+
