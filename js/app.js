@@ -8,20 +8,17 @@ alert('Hello, ' + userName + '.');
 var userLikesToPlayAboutMe = prompt('I want to play a Guessing Game About Me. Do you want to play it with me, ' + userName + '?');
 console.log('The user response is, ' + userLikesToPlayAboutMe);
 if(userType.toLowerCase() === 'yes'){
-  alert('ALright, ' + userName + '. Let\'s do it.');
+  alert('Alright, ' + userName + '. Let\'s start.');
 } else {
-  alert('Noooo! Let\'s do some try ' + userName +', It is interesting.');
+  alert('Noooo! Let\'s give it a try ' + userName +', You will find it very interesting.');
 }
 
-var userTriesMyName = ['James', 'Jacob', 'Jack', 'Jason'];
-prompt('Question 1: My name is an english male name starting with \'Ja\'. Could you name it ' + userName +'?');
+var userTriesMyName = prompt('Question 1: My name is an english male name starting with \'Ja\'. Could you name it ' + userName +'?');
 console.log('The user response is, ' + userTriesMyName);
 if(userTriesMyName.toLowerCase() === 'James'){
   alert('Yeah! You have easly got it!')
-}else if (userTriesMyName.toLowerCase() === ['Jacob', 'Jack', 'Jason']){
-  alert('You are too close, ' + userName);
 } else {
-  alert('Nope. Try again, ' +userName);
+  alert('Nope. You are totally wrong ' +userName + '! My name is James.');
 }
 
 var userCountry = prompt('Which Country do you live in, ' + userName +'?');
@@ -32,12 +29,12 @@ if(userCountry.toLowerCase() === 'usa'){
   alert('Waaw. Your country is great. I will visit one day. God willing!');
 }
 
-var userLikesCoding = prompt('Do you like Coding, ' + userName +'?');
-console.log('The user choice is, ' + userLikesCoding);
-if(userLikesCoding.toLowerCase() === 'yes'){
-  alert('Waaw! It is My Hoobby!!!');
+var iComeFrom = prompt('I come from Africa, in a small country also known as \'Country of thousand hills\'. Can you guess it, ' + userName +'?');
+console.log('The user answer is, ' + icomeFrom);
+if(iComeFrom.toLowerCase() === 'rwanda'){
+  alert('Waaw! You are so genious!!!');
 } else {
-  alert('Try it! It is very interesting!!');
+  alert('Wrong answer. I am from RWANDA.');
 }
 
 var userWannaGoAhead = prompt('This site is about Coding. Do you want to go ahead and learn more?');
