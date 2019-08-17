@@ -1,11 +1,11 @@
 'use strict';
 
 var userName = prompt('Hello. What is your name?');
-console.log('The user name is, ' + userName);
+console.log('The user name is, ' + userName)
 alert('Hello, ' + userName + '.');
 
 var userLikesToPlayAboutMe = prompt('I want to play a Guessing Game About Me. Do you want to play it with me, ' + userName + '?');
-console.log('The user response is, ' + userLikesToPlayAboutMe);
+console.log('The user response is, ' + userLikesToPlayAboutMe)
 if(userType.toLowerCase() === 'yes'){
   alert('Alright, ' + userName + '. Let\'s start.');
 } else {
@@ -13,7 +13,7 @@ if(userType.toLowerCase() === 'yes'){
 }
 
 var userTriesMyName = prompt('My name is an english male name starting with \'Ja\'. Can you name it ' + userName +'?');
-console.log('The user response is, ' + userTriesMyName);
+console.log('The user response is, ' + userTriesMyName)
 if(userTriesMyName.toLowerCase() === 'James'){
   alert('Yeah! You have easily got it!');
 } else {
@@ -21,7 +21,7 @@ if(userTriesMyName.toLowerCase() === 'James'){
 }
 
 var userCountry = prompt('Which Country do you live in, ' + userName +'?');
-console.log('The user country is, ' + userCountry);
+console.log('The user country is, ' + userCountry)
 if(userCountry.toLowerCase() === 'usa'){
   alert('Waaw! I live in USA too!!!');
 } else {
@@ -29,7 +29,7 @@ if(userCountry.toLowerCase() === 'usa'){
 }
 
 var iComeFrom = prompt('I come from Africa, in a small country also known as \'Country of thousand hills\'. Can you guess it, ' + userName +'?');
-console.log('The user answer is, ' + icomeFrom);
+console.log('The user answer is, ' + icomeFrom)
 if(iComeFrom.toLowerCase() === 'rwanda'){
   alert('Waaw! You are so genious!!!');
 } else {
@@ -37,7 +37,7 @@ if(iComeFrom.toLowerCase() === 'rwanda'){
 }
 
 var userWannaGoAhead = prompt('This site is about Coding. Do you want to go ahead and learn more?');
-console.log('The user will to go ahead is , ' + userWannaGoAhead);
+console.log('The user will to go ahead is , ' + userWannaGoAhead)
 if(userWannaGoAhead.toLowerCase() === 'yes'){
   alert('Alright, ' + userName +'. Let\'s go ahead. Click Ok.');
 } else {
