@@ -1,15 +1,13 @@
 'use strict';
 
+var answers = 0;
+function plus1(){
+  answers++;
+}
+
 var userName = prompt('Hello. What is your name?');
 console.log('The user name is, ' + userName);
 alert('Hello, ' + userName + '.');
-
-function correct(){
-  alert('Yees! You have got it easily ' + userName + '! Cool.');
-}
-function incorrect(){
-  alert('Sorry, ' + userName + ', you got it wrong. Please try again.');
-}
 
 var userLikesToPlayAboutMe = prompt('I want to play a Guessing Game About Me. Do you want to play it with me, ' + userName + '?');
 console.log('The user response is, ' + userLikesToPlayAboutMe);
@@ -21,23 +19,31 @@ if(userLikesToPlayAboutMe.toLowerCase() === 'yes'){
 
 for(var i = 0; i < 4; i++) {
   var userTriesMyName = prompt('My name is an english male name starting with \'Ja\'. Can you name it ' + userName +'?');
+
+  function correct(){
+    alert('Yees! You have got it easily ' + userName + '! Cool.');
+    plus1();
+    console.log('Added 1 to answers.');
+  }
+  function incorrect(){
+    alert('Sorry, ' + userName + ', you got it wrong. Please try again.');
+  }
+  function logGuess(){
+    console.log('On attempt ' + i + ' to guess my name, ' + userName + ' guessed ' + userTriesMyName);
+  }
   
   if(userTriesMyName.toLowerCase() === 'james'){
     correct();
-    console.log('On attempt ' + i + ' to guess my name, ' + userName + ' guessed ' + userTriesMyName);
-    i = 4;
-  } else if(userTriesMyName === 'James'){
-    correct();
-    console.log('On attempt ' + i + ' to guess my name, ' + userName + ' guessed ' + userTriesMyName);
+    logGuess();
     i = 4;
   } else if(i === 3){
     if(userTriesMyName != 'James' || userTriesMyName.toLowerCase() != 'james'){
       alert('Nope. You are totally wrong ' +userName + '! My name is James.');
-      console.log('On attempt ' + i + ' to guess my name, ' + userName + ' guessed ' + userTriesMyName);
+      logGuess();
     }    
   } else {
     incorrect();
-    console.log('On attempt ' + i + ' to guess my name, ' + userName + ' guessed ' + userTriesMyName);
+    logGuess();
   }
 }
 
@@ -49,12 +55,34 @@ if(userCountry.toLowerCase() === 'usa'){
   alert('Waaw. ' + userCountry + ' is great. I will visit one day. God willing!');
 }
 
-var countryComeFrom = prompt('I come from Africa, in a small country also known as \'Country of thousand hills\'. Can you guess it, ' + userName +'?');
-console.log('The user answer is, ' + countryComeFrom)
-if(countryComeFrom.toLowerCase() === 'rwanda'){
-  alert('Waaw! You are genious, ' + userName + '! How did you come to find it out fast?');
-} else {
-  alert('Wrong answer, ' + userName + '! I am from Rwanda.');
+for(var i = 0; i < 4; i++){
+  var countryComeFrom = prompt('I come from Africa, in a small country also known as \'Country of thousand hills\'. Can you guess it, ' + userName + '?');
+
+  function correct(){
+    alert('Waaw! You are genious, ' + userName + '! How did you come to find it out fast?');
+    plus1();
+    console.log('Added 1 to answers.');
+  }
+  function incorrect(){
+    alert('Sorry, ' + userName + ', you got it wrong. Please try again.');
+  }
+  function logGuess(){
+    console.log('On attempt ' + i + ' to guess my country, ' + userName + ' guessed ' + countryComeFrom)
+  }
+
+  if(countryComeFrom.toLowerCase() === 'rwanda'){
+    correct();
+    logGuess();
+    i = 4;
+  } else if(i === 3){
+    if(countryComeFrom.toLowerCase() != 'rwanda'){
+      alert('Wrong answer, ' + userName + '! I am from Rwanda.');
+      logGuess();
+    }
+  } else {
+    incorrect();
+    logGuess();
+  }
 }
 
 var userWantGoAhead = prompt('This site is about Coding. Do you want to go ahead and learn more?');
@@ -63,4 +91,12 @@ if(userWantGoAhead.toLowerCase() === 'yes'){
   alert('Alright, ' + userName +'. Let\'s go ahead. Click Ok.');
 } else {
   alert('It is okey, ' + userName +'. Take a tour on my website maybe you will change your mind.');
+}
+
+if(answers === 0){
+  alert('Darn, you didn\'t guess any of my questions correct. ' + userName + ', you should really get to know me better! Come check out my \'About Me\' website!');
+} else if(answers === 1){
+  alert('Hey, ' + userName + ' you got one of two questions about me correct, not bad! You should come check out my \'About Me\' website!');
+} else{
+  alert(userName + ', you guessed both of my question correctly! You must already know me! You should check out my \'About Me\' webiste to learn even more!');
 }
