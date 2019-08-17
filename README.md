@@ -15,5 +15,6 @@ ___Thank you. Hope to see you ahead!___
 August 15th, 2019
 As a developper, I would like to strech my skills by updating my site and make it "About Me" where i updated it with more information related to me. i have also added Top Ten List of My Favorite Gospel Songs at the bottom of the page including their youtube videos. ***See You Soon***
 
+17 Aug 2019, Brett Packard forked the repo to begin work on Lab 04, pair programming
 
 
