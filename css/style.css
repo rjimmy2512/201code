@@ -13,8 +13,12 @@ ul li{
 }
 h1 {
   margin-top: 10px;
-  color: black;
+  color: rgb(192, 38, 38);
   }
+h2 {
+  margin-top: 20px;
+  color: rgb(189, 27, 27); 
+}
 body {
   width: 960px;
   min-height: 700px;
