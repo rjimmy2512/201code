@@ -31,18 +31,15 @@ if(userCountry.toLowerCase() === 'usa'){
 var countryComeFrom = prompt('I come from Africa, in a small country also known as \'Country of thousand hills\'. Can you guess it, ' + userName +'?');
 console.log('The user answer is, ' + countrycomeFrom)
 if(countryComeFrom.toLowerCase() === 'rwanda'){
-  alert('Waaw! You are so genious!!!');
+  alert('Waaw! You are genious, ' + userName + '! How did you come to find it out?');
 } else {
-  alert('Wrong answer. I am from RWANDA.');
+  alert('Wrong answer, ' + userName + '!I am from Rwanda.');
 }
 
 var userWantGoAhead = prompt('This site is about Coding. Do you want to go ahead and learn more?');
-console.log('The user will to go ahead is , ' + userWantGoAhead)
+console.log('The user willing to go ahead is , ' + userWantGoAhead)
 if(userWantGoAhead.toLowerCase() === 'yes'){
   alert('Alright, ' + userName +'. Let\'s go ahead. Click Ok.');
 } else {
-  alert('It is okey, ' + userName +'. Take a tour on my website maybe you will change your mind. Click Ok.');
+  alert('It is okey, ' + userName +'. Take a tour on my website maybe you will change your mind.');
 }
-
-
-f
