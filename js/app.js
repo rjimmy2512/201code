@@ -15,7 +15,7 @@ if(userLikesToPlayAboutMe.toLowerCase() === 'yes'){
 var userTriesMyName = prompt('My name is an english male name starting with \'Ja\'. Can you name it ' + userName +'?');
 console.log('The user response is, ' + userTriesMyName)
 if(userTriesMyName.toLowerCase() === 'James'){
-  alert('Yeah! You have easily got it!');
+  alert('Yees! You have got it easily' + userName + '! Cool.');
 } else {
   alert('Nope. You are totally wrong ' +userName + '! My name is James.');
 }
@@ -29,11 +29,11 @@ if(userCountry.toLowerCase() === 'usa'){
 }
 
 var countryComeFrom = prompt('I come from Africa, in a small country also known as \'Country of thousand hills\'. Can you guess it, ' + userName +'?');
-console.log('The user answer is, ' + countrycomeFrom)
+console.log('The user answer is, ' + countryComeFrom)
 if(countryComeFrom.toLowerCase() === 'rwanda'){
-  alert('Waaw! You are genious, ' + userName + '! How did you come to find it out?');
+  alert('Waaw! You are genious, ' + userName + '! How did you come to find it out fast?');
 } else {
-  alert('Wrong answer, ' + userName + '!I am from Rwanda.');
+  alert('Wrong answer, ' + userName + '! I am from Rwanda.');
 }
 
 var userWantGoAhead = prompt('This site is about Coding. Do you want to go ahead and learn more?');
