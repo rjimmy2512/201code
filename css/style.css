@@ -38,6 +38,7 @@ img {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  float: left;
 }
 body li {
   color: blue;
