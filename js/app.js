@@ -5,20 +5,23 @@ console.log('The user name is, ' + userName);
 alert('Hello, ' + userName + '.');
 
 
-var userType = prompt('Hi. Are You not a Robot, ' + userName + '?');
-console.log('The user type is, ' + userType);
-if(userType.toLowerCase() === 'no'){
-  alert('Welcome to My Website, ' + userName + '.');
+var userLikesToPlayAboutMe = prompt('I want to play a Guessing Game About Me. Do you want to play it with me, ' + userName + '?');
+console.log('The user response is, ' + userLikesToPlayAboutMe);
+if(userType.toLowerCase() === 'yes'){
+  alert('ALright, ' + userName + '. Let\'s do it.');
 } else {
-  alert('Noooo! You were not meant to be Here, ' + userName +'!!');
+  alert('Noooo! Let\'s do some try ' + userName +', It is interesting.');
 }
 
-var userGender = prompt('Are You a Male, ' + userName +'?');
-console.log('The user gender is, ' + userGender);
-if(userGender.toLowerCase() === 'yes'){
-  alert('I am a Male, Too.');
+var userTriesMyName = ['James', 'Jacob', 'Jack', 'Jason'];
+prompt('Question 1: My name is an english male name starting with \'Ja\'. Could you name it ' + userName +'?');
+console.log('The user response is, ' + userTriesMyName);
+if(userTriesMyName.toLowerCase() === 'James'){
+  alert('Yeah! You have easly got it!')
+}else if (userTriesMyName.toLowerCase() === ['Jacob', 'Jack', 'Jason']){
+  alert('You are too close, ' + userName);
 } else {
-  alert('That\'s cool. I am a Male!!');
+  alert('Nope. Try again, ' +userName);
 }
 
 var userCountry = prompt('Which Country do you live in, ' + userName +'?');
