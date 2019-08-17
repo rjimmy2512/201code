@@ -15,7 +15,7 @@ if(userType.toLowerCase() === 'yes'){
 var userTriesMyName = prompt('My name is an english male name starting with \'Ja\'. Can you name it ' + userName +'?');
 console.log('The user response is, ' + userTriesMyName);
 if(userTriesMyName.toLowerCase() === 'James'){
-  alert('Yeah! You have easly got it!');
+  alert('Yeah! You have easily got it!');
 } else {
   alert('Nope. You are totally wrong ' +userName + '! My name is James.');
 }
