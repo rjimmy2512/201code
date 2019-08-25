@@ -3,8 +3,11 @@ header {
   display: auto;
   height: 80px;
   margin-top: auto;
-  hover: yellow;
- }
+  }
+hover {
+  color: yellow;
+  text-decoration: underline;
+  }
  ul li{
   display: inline-block;
   margin-right: 50px;
