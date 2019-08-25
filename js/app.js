@@ -94,8 +94,7 @@ if(iPlayGuitar.toLowerCase() === 'Yes'){
     console.log('Added 1 to answers.');
   } else{
     alert('Well, I guess you didn\'t know, ' + userName + ', but playing guitar is one of my hobby!');
-  logGuess();
-  } 
+   } 
 
 
 if(answers === 0){
