@@ -85,18 +85,24 @@ for(var i = 0; i < 4; i++){
   }
 }
 
-var userWantGoAhead = prompt('This site is about Coding. Do you want to go ahead and learn more?');
-console.log('The user willing to go ahead is , ' + userWantGoAhead)
-if(userWantGoAhead.toLowerCase() === 'yes'){
-  alert('Alright, ' + userName +'. Let\'s go ahead. Click Ok.');
-} else {
-  alert('It is okey, ' + userName +'. Take a tour on my website maybe you will change your mind.');
-}
+
+var iPlayGuitar = prompt('Do you think I play guitar?');
+console.log('The user answer is, ' + iPlayGuitar);
+if(iPlayGuitar.toLowerCase() === 'Yes'){
+    alert('And Yees! You got it!');
+    plus1();
+    console.log('Added 1 to answers.');
+  } else{
+    alert('Well, I guess you didn\'t know, ' + userName + ', but playing guitar is one of my hobby!');
+  logGuess();
+  } 
+
 
 if(answers === 0){
   alert('Darn, you didn\'t guess any of my questions correct. ' + userName + ', you should really get to know me better! Come check out my \'About Me\' website!');
 } else if(answers === 1){
   alert('Hey, ' + userName + ' you got one of two questions about me correct, not bad! You should come check out my \'About Me\' website!');
 } else{
-  alert(userName + ', you guessed both of my question correctly! You must already know me! You should check out my \'About Me\' webiste to learn even more!');
+  alert(userName + ', you guessed both of my question correctly! You must already know me! You should check out my \'About Me\' website and learn even more!');
 }
+
