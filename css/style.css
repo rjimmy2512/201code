@@ -4,15 +4,15 @@ header {
   height: 80px;
   margin-top: auto;
   }
-hover {
-  color: yellow;
-  text-decoration: underline;
-  }
  ul li{
   display: inline-block;
   margin-right: 50px;
   margin-left: 30px;
   margin-top: 20px;
+ }
+ ul li{
+  hover: yellow;
+  text-decoration: underline;
 }
 body {
   width: 960px;
